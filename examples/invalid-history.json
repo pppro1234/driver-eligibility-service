@@ -1,0 +1,57 @@
+{
+  "driver": {
+    "firstName": "Maya",
+    "lastName": "Demo",
+    "birthDate": "1994-04-12"
+  },
+  "license": {
+    "number": "SYNTH-MA-1001",
+    "firstName": "Maya",
+    "lastName": "Demo",
+    "address": "100 Example Street, Boston, MA",
+    "birthDate": "1994-04-12",
+    "countryAndState": "US, MA",
+    "issuanceDate": "2020-01-01",
+    "expirationDate": "2035-01-01"
+  },
+  "vehicles": [
+    {
+      "year": 2024,
+      "color": "Blue",
+      "make": "Honda",
+      "model": "Civic",
+      "ownerName": "Demo, Maya",
+      "plate": "SYNTH-1001"
+    }
+  ],
+  "insurance": {
+    "owner": {
+      "firstName": "Maya",
+      "lastName": "Demo"
+    },
+    "expirationDate": "2035-01-01",
+    "drivers": [
+      {
+        "firstName": "Maya",
+        "lastName": "Demo"
+      }
+    ]
+  },
+  "driverHistory": {
+    "date": "2025-03-01",
+    "category": "MOVING",
+    "type": "DUI"
+  },
+  "vehicleHistory": [
+    {
+      "plate": "SYNTH-1001",
+      "date": "2020-01-01",
+      "category": "CRASH",
+      "type": "FENDER_BENDER",
+      "offender": {
+        "firstName": "Maya",
+        "lastName": "Demo"
+      }
+    }
+  ]
+}

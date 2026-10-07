@@ -1,0 +1,131 @@
+plugins {
+// Build Java: https://docs.gradle.org/current/userguide/building_java_projects.html
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '3.5.16'
+
+// https://docs.gradle.org/current/userguide/pmd_plugin.html#header
+    id 'pmd'
+
+// https://docs.gradle.org/current/userguide/jacoco_plugin.html
+    id 'jacoco'
+}
+
+group 'driver.eligibility'
+version '2.0.0'
+
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) } }
+application { mainClass = 'Registration.RideshareDriverValidator' }
+springBoot { mainClass = 'Registration.Api.RegistrationServiceApplication' }
+tasks.named('bootJar') { mainClass = 'Registration.Api.RegistrationServiceApplication' }
+tasks.named('bootRun') { mainClass = 'Registration.Api.RegistrationServiceApplication' }
+tasks.named('run', JavaExec) { standardInput = System.in }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('org.springframework.boot:spring-boot-dependencies:3.5.16')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.flywaydb:flyway-core'
+    runtimeOnly 'org.flywaydb:flyway-database-postgresql'
+    runtimeOnly 'org.postgresql:postgresql'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.zonky.test:embedded-postgres:2.2.2'
+    testImplementation enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:14.22.0')
+    testRuntimeOnly 'io.zonky.test.postgres:embedded-postgres-binaries-darwin-arm64v8'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+pmd {
+    ignoreFailures=true
+    pmdTest.enabled=false
+
+    consoleOutput = true
+    toolVersion = "7.0.0"
+    rulesMinimumPriority = 5
+    ruleSets = ["category/java/errorprone.xml",
+                "category/java/bestpractices.xml",
+                "category/java/codestyle.xml"]
+}
+
+javadoc {
+    doLast {
+        String fixedBuildDir = buildDir.toString().replace('\\', '/')
+        println "file:///$fixedBuildDir/docs/javadoc/index.html"
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.11"
+}
+
+jacocoTestReport {
+    reports {
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+    doLast {
+        String fixedBuildDir = buildDir.toString().replace('\\', '/')
+        println "file:///$fixedBuildDir/jacocoHtml/index.html"
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                // minimum percentage of code coverage
+                minimum = 0.2
+            }
+        }
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+// Fail the build if code coverage isn't high enough
+check.dependsOn jacocoTestCoverageVerification
+jacocoTestCoverageVerification.dependsOn test
+
+// Run code coverage after tests run
+jacocoTestReport.mustRunAfter test
+
+
+task doAll {
+    // Runs a java build. Imported from the java plugin
+    dependsOn build
+    // Runs all the tests. Imported from the java plugin.
+    dependsOn test
+    // Runs pmd. Imported by pmd plugin
+    dependsOn check
+    // Runs java doc. Imported from the java plugin
+    dependsOn javadoc
+    println 'all done!'
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+// Database integration tests are part of test/build; no automatic skip when PostgreSQL cannot start.
+tasks.withType(Test).configureEach {
+    maxHeapSize = '1g'
+    testLogging { events 'failed', 'skipped'; exceptionFormat 'full' }
+}
+
+// Exercise the actual distributable in the PostgreSQL restart smoke test.
+tasks.named('test') {
+    dependsOn tasks.named('bootJar')
+    systemProperty 'application.jar', tasks.named('bootJar').get().archiveFile.get().asFile.absolutePath
+}

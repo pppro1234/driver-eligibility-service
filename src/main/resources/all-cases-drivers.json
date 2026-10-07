@@ -1,0 +1,771 @@
+[
+  {
+    "driver": {
+      "firstName": "Anne",
+      "lastName": "Smith",
+      "birthDate": "1995-03-15"
+    },
+    "license": {
+      "number": "MA-AS-0001",
+      "firstName": "Anne",
+      "lastName": "Smith",
+      "address": "10 Beacon St, Boston, MA",
+      "birthDate": "1995-03-15",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2024-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2019,
+        "color": "Blue",
+        "make": "Honda",
+        "model": "Accord",
+        "ownerName": "Smith, Anne",
+        "plate": "BAY01FG"
+      },
+      {
+        "year": 2018,
+        "color": "Silver",
+        "make": "Toyota",
+        "model": "Prius",
+        "ownerName": "Smith, Anne",
+        "plate": "AZ034W1"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Anne",
+        "lastName": "Smith"
+      },
+      "expirationDate": "2030-05-01",
+      "drivers": [
+        "Smith, Anne"
+      ]
+    },
+    "driverHistory": [
+      {
+        "date": "2025-01-01",
+        "category": "MOVING",
+        "type": "DISTRACTED_DRIVING"
+      },
+      {
+        "date": "2025-02-01",
+        "category": "NONMOVING",
+        "type": "PARKING_VIOLATION"
+      }
+    ],
+    "vehicleHistory": [
+      {
+        "plate": "BAY01FG",
+        "date": "1900-01-01",
+        "category": "CRASH",
+        "type": "FENDER_BENDER",
+        "offender": "Smith, Anne"
+      }
+    ]
+  },
+  {
+    "driver": {
+      "firstName": "Brandon",
+      "lastName": "Smith",
+      "birthDate": "1994-07-08"
+    },
+    "license": {
+      "number": "MA-BS-0002",
+      "firstName": "Brandon",
+      "lastName": "Smith",
+      "address": "22 Market St, Boston, MA",
+      "birthDate": "1994-07-08",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2017,
+        "color": "Red",
+        "make": "Mazda",
+        "model": "6",
+        "ownerName": "Smith, Brandon",
+        "plate": "AAB1234"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Brandon",
+        "lastName": "Smith"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Smith, Brandon"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Patricia",
+      "lastName": "Fuller",
+      "birthDate": "1990-11-20"
+    },
+    "license": {
+      "number": "WA-PF-0003",
+      "firstName": "Patricia",
+      "lastName": "Fuller",
+      "address": "5 Pine St, Seattle, WA",
+      "birthDate": "1990-11-20",
+      "countryAndState": "US, WA",
+      "issuanceDate": "2019-06-01",
+      "expirationDate": "2030-06-01"
+    },
+    "vehicles": [
+      {
+        "year": 2021,
+        "color": "Blue",
+        "make": "Ford",
+        "model": "Explorer",
+        "ownerName": "Fuller, Patricia",
+        "plate": "ZZW-123"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Patricia",
+        "lastName": "Fuller"
+      },
+      "expirationDate": "2030-12-01",
+      "drivers": [
+        "Fuller, Patricia"
+      ]
+    },
+    "driverHistory": [
+      {
+        "date": "2025-03-01",
+        "category": "MOVING",
+        "type": "DISTRACTED_DRIVING"
+      },
+      {
+        "date": "2025-04-01",
+        "category": "NONMOVING",
+        "type": "PARKING_VIOLATION"
+      }
+    ],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Evan",
+      "lastName": "Chen",
+      "birthDate": "1992-05-05"
+    },
+    "license": {
+      "number": "ON-EC-0004",
+      "firstName": "Evan",
+      "lastName": "Chen",
+      "address": "100 King St, Toronto, ON",
+      "birthDate": "1992-05-05",
+      "countryAndState": "Canada, ON",
+      "issuanceDate": "2018-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2020,
+        "color": "White",
+        "make": "Tesla",
+        "model": "Model 3",
+        "ownerName": "Chen, Evan",
+        "plate": "CAN-777"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Evan",
+        "lastName": "Chen"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Chen, Evan"
+      ]
+    },
+    "driverHistory": [
+      {
+        "date": "2025-01-15",
+        "category": "NONMOVING",
+        "type": "PAPERWORK_ISSUE"
+      }
+    ],
+    "vehicleHistory": [
+      {
+        "plate": "CAN-777",
+        "date": "1900-01-01",
+        "category": "CRASH",
+        "type": "NO_INJURY_CRASH",
+        "offender": "Chen, Evan"
+      }
+    ]
+  },
+  {
+    "driver": {
+      "firstName": "Olivia",
+      "lastName": "King",
+      "birthDate": "1991-02-02"
+    },
+    "license": {
+      "number": "CA-OK-0005",
+      "firstName": "Olivia",
+      "lastName": "King",
+      "address": "1 Ocean Ave, SF, CA",
+      "birthDate": "1991-02-02",
+      "countryAndState": "US, CA",
+      "issuanceDate": "2017-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2016,
+        "color": "Black",
+        "make": "BMW",
+        "model": "X3",
+        "ownerName": "King, Olivia",
+        "plate": "SHARED-1"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Olivia",
+        "lastName": "King"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "King, Olivia"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Noah",
+      "lastName": "King",
+      "birthDate": "1993-09-09"
+    },
+    "license": {
+      "number": "CA-NK-0006",
+      "firstName": "Noah",
+      "lastName": "King",
+      "address": "2 Ocean Ave, SF, CA",
+      "birthDate": "1993-09-09",
+      "countryAndState": "US, CA",
+      "issuanceDate": "2017-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2016,
+        "color": "Black",
+        "make": "BMW",
+        "model": "X3",
+        "ownerName": "King, Olivia",
+        "plate": "SHARED-1"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Olivia",
+        "lastName": "King"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "King, Olivia",
+        "King, Noah"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Tim",
+      "lastName": "Young",
+      "birthDate": "2090-01-01"
+    },
+    "license": {
+      "number": "NY-TY-0100",
+      "firstName": "Tim",
+      "lastName": "Young",
+      "address": "9 Park Ave, NYC, NY",
+      "birthDate": "2090-01-01",
+      "countryAndState": "US, NY",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2022,
+        "color": "Green",
+        "make": "Subaru",
+        "model": "Outback",
+        "ownerName": "Young, Tim",
+        "plate": "YNG-001"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Tim",
+        "lastName": "Young"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Young, Tim"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Amy",
+      "lastName": "Li",
+      "birthDate": "1998-02-10"
+    },
+    "license": {
+      "number": "MA-AL-0200",
+      "firstName": "Amy",
+      "lastName": "Lee",
+      "address": "12 Main St, Boston, MA",
+      "birthDate": "1998-02-10",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2018,
+        "color": "Blue",
+        "make": "Toyota",
+        "model": "Camry",
+        "ownerName": "Li, Amy",
+        "plate": "ABC123"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Amy",
+        "lastName": "Li"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Li, Amy"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Mia",
+      "lastName": "Wong",
+      "birthDate": "1997-06-06"
+    },
+    "license": {
+      "number": "MA-MW-0300",
+      "firstName": "Mia",
+      "lastName": "Wong",
+      "address": "33 Main St, Boston, MA",
+      "birthDate": "1997-06-07",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2019,
+        "color": "Gray",
+        "make": "Nissan",
+        "model": "Altima",
+        "ownerName": "Wong, Mia",
+        "plate": "WNG-606"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Mia",
+        "lastName": "Wong"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Wong, Mia"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Luis",
+      "lastName": "Garcia",
+      "birthDate": "1990-03-03"
+    },
+    "license": {
+      "number": "MX-LG-0400",
+      "firstName": "Luis",
+      "lastName": "Garcia",
+      "address": "Calle 1, CDMX",
+      "birthDate": "1990-03-03",
+      "countryAndState": "Mexico, MX",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2020,
+        "color": "Red",
+        "make": "Kia",
+        "model": "Soul",
+        "ownerName": "Garcia, Luis",
+        "plate": "MEX-404"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Luis",
+        "lastName": "Garcia"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Garcia, Luis"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Zoe",
+      "lastName": "Park",
+      "birthDate": "1993-12-12"
+    },
+    "license": {
+      "number": "WA-ZP-0500",
+      "firstName": "Zoe",
+      "lastName": "Park",
+      "address": "7 Lake St, Seattle, WA",
+      "birthDate": "1993-12-12",
+      "countryAndState": "US, WA",
+      "issuanceDate": "2099-01-01",
+      "expirationDate": "2100-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2021,
+        "color": "White",
+        "make": "Hyundai",
+        "model": "Elantra",
+        "ownerName": "Park, Zoe",
+        "plate": "ZP-500"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Zoe",
+        "lastName": "Park"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Park, Zoe"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Ian",
+      "lastName": "Brown",
+      "birthDate": "1988-08-08"
+    },
+    "license": {
+      "number": "MA-IB-0600",
+      "firstName": "Ian",
+      "lastName": "Brown",
+      "address": "8 Hill St, Boston, MA",
+      "birthDate": "1988-08-08",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2010-01-01",
+      "expirationDate": "1900-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2020,
+        "color": "Blue",
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "ownerName": "Brown, Ian",
+        "plate": "IB-600"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Ian",
+        "lastName": "Brown"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Brown, Ian"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Grace",
+      "lastName": "Hall",
+      "birthDate": "1985-05-05"
+    },
+    "license": {
+      "number": "MA-GH-0700",
+      "firstName": "Grace",
+      "lastName": "Hall",
+      "address": "70 River Rd, Boston, MA",
+      "birthDate": "1985-05-05",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2015-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 1900,
+        "color": "Black",
+        "make": "Ford",
+        "model": "Model T",
+        "ownerName": "Hall, Grace",
+        "plate": "OLD-015"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Grace",
+        "lastName": "Hall"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Hall, Grace"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Henry",
+      "lastName": "Stone",
+      "birthDate": "1987-07-07"
+    },
+    "license": {
+      "number": "MA-HS-0800",
+      "firstName": "Henry",
+      "lastName": "Stone",
+      "address": "80 Bay St, Boston, MA",
+      "birthDate": "1987-07-07",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2015-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2019,
+        "color": "Silver",
+        "make": "Audi",
+        "model": "A4",
+        "ownerName": "Stone, Henry",
+        "plate": "INS-EXP"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Henry",
+        "lastName": "Stone"
+      },
+      "expirationDate": "1900-01-01",
+      "drivers": [
+        "Stone, Henry"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Nina",
+      "lastName": "Lopez",
+      "birthDate": "1991-01-01"
+    },
+    "license": {
+      "number": "CA-NL-0900",
+      "firstName": "Nina",
+      "lastName": "Lopez",
+      "address": "90 Palm St, LA, CA",
+      "birthDate": "1991-01-01",
+      "countryAndState": "US, CA",
+      "issuanceDate": "2015-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2020,
+        "color": "Blue",
+        "make": "Volvo",
+        "model": "XC60",
+        "ownerName": "Carter, Sam",
+        "plate": "COV-000"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Sam",
+        "lastName": "Carter"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Carter, Sam"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Oscar",
+      "lastName": "Reed",
+      "birthDate": "1990-10-10"
+    },
+    "license": {
+      "number": "MA-OR-1000",
+      "firstName": "Oscar",
+      "lastName": "Reed",
+      "address": "10 South St, Boston, MA",
+      "birthDate": "1990-10-10",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2015-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2022,
+        "color": "Red",
+        "make": "Toyota",
+        "model": "RAV4",
+        "ownerName": "Reed, Oscar",
+        "plate": "DUI-10"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Oscar",
+        "lastName": "Reed"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Reed, Oscar"
+      ]
+    },
+    "driverHistory": [
+      {
+        "date": "2025-06-01",
+        "category": "MOVING",
+        "type": "DUI"
+      }
+    ],
+    "vehicleHistory": []
+  },
+  {
+    "driver": {
+      "firstName": "Uma",
+      "lastName": "Davis",
+      "birthDate": "1989-09-19"
+    },
+    "license": {
+      "number": "MA-UD-1100",
+      "firstName": "Uma",
+      "lastName": "Davis",
+      "address": "11 North St, Boston, MA",
+      "birthDate": "1989-09-19",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2015-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2020,
+        "color": "White",
+        "make": "Honda",
+        "model": "Civic",
+        "ownerName": "Davis, Uma",
+        "plate": "VH-REC"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Uma",
+        "lastName": "Davis"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Davis, Uma"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": [
+      {
+        "plate": "VH-REC",
+        "date": "2099-12-01",
+        "category": "CRASH",
+        "type": "INJURY_CRASH",
+        "offender": "Davis, Uma"
+      }
+    ]
+  },
+  {
+    "driver": {
+      "firstName": "Brandon",
+      "lastName": "Smith",
+      "birthDate": "1994-07-08"
+    },
+    "license": {
+      "number": "MA-BS-0002",
+      "firstName": "Brandon",
+      "lastName": "Smith",
+      "address": "22 Market St, Boston, MA",
+      "birthDate": "1994-07-08",
+      "countryAndState": "US, MA",
+      "issuanceDate": "2020-01-01",
+      "expirationDate": "2030-01-01"
+    },
+    "vehicles": [
+      {
+        "year": 2017,
+        "color": "Red",
+        "make": "Mazda",
+        "model": "6",
+        "ownerName": "Smith, Brandon",
+        "plate": "AAB1234"
+      }
+    ],
+    "insurance": {
+      "owner": {
+        "firstName": "Brandon",
+        "lastName": "Smith"
+      },
+      "expirationDate": "2030-01-01",
+      "drivers": [
+        "Smith, Brandon"
+      ]
+    },
+    "driverHistory": [],
+    "vehicleHistory": []
+  }
+]

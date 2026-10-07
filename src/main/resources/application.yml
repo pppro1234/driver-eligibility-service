@@ -1,0 +1,19 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+spring:
+  application:
+    name: driver-eligibility-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://127.0.0.1:5432/driver_applications}
+    username: ${DB_USER:driver_app}
+    password: ${DB_PASSWORD:}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+app:
+  # Empty = actual current UTC date. Override only for reproducible local demonstrations.
+  evaluation-date: ${APP_EVALUATION_DATE:}
